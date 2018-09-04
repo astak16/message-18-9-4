@@ -1,0 +1,281 @@
+@charset "UTF-8";
+ul > li, ol > li {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+body {
+    background: #efefef;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.messages {
+    max-width: 940px;
+    margin: 0 auto ;
+}
+
+.messages > .message > h2 {
+    text-align: center;
+    margin: 60px
+}
+
+.messages .message {
+    background: white;
+    width: 800px;
+    overflow: hidden;;
+}
+
+.messages .message > form {
+    margin: 30px 50px 50px;
+}
+
+.messages .message > form .reviewTittle {
+    border-bottom: 2px solid #c20c0c;
+    margin-bottom: 20px;
+    padding-bottom: 2px;
+}
+
+.messages .message > form .reviewTittle > span:first-child {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+
+.messages .message > form .reviewTittle > span:last-child {
+    font-size: 12px;
+}
+
+.messages .message > form .writeReviewWrapper {
+    position: relative;
+}
+
+.messages .message > form .writeReview {
+    margin-left: 62px;
+    position: relative;
+}
+
+.messages .message > form textarea {
+    resize: none;
+    outline: none;
+    height: 60px;
+    width: 100%;
+    padding: 5px 10px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    line-height: 19px;
+    font-size: 12px;
+    color: #333;
+}
+
+.messages .message > form input[name=userName] {
+    display: inline-block;
+    resize: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+}
+
+.messages .message > form input[type=submit] {
+    width: 46px;
+    height: 25px;
+    background: url("../images/button.png") -84px -64px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    float: right;
+}
+
+.messages .message > form .writeReviewWrapper .writeReview::before, .messages form .writeReviewWrapper .writeReview::after {
+    content: '';
+    position: absolute;
+    border: 5px solid #cdcdcd;
+    transform: rotate(45deg);
+    top: 8px;
+    left: -5px;
+}
+
+.messages .message > form .writeReviewWrapper .writeReview::after {
+    border: 5px solid white;
+    left: -3px;
+}
+
+.messages .message > h3 {
+    top: 1px;
+    margin: 0 50px;
+    border-bottom: 1px solid #cfcfcf;
+    font-size: inherit;
+}
+
+.messages .message li {
+    margin: 20px 50px;
+    border-bottom: 1px dotted #cfcfcf;
+}
+
+.messages .message li:last-child {
+    border: none;
+}
+
+.messages .message li > .userInformation {
+    font-size: 12px;
+    color: #333;
+    position: relative;
+}
+
+.messages .message li > .userInformation .userContentUp {
+    line-height: 20px;
+    text-align: justify;
+}
+
+.messages .message li > .userInformation .userContentMiddle .userNamePrompt, .messages .message li > .userInformation .userContentUp .userName {
+    color: #0c73c2;
+}
+
+.messages .message li > .userInformation .userContentMiddle {
+    position: relative;
+    padding: 8px 19px;
+    margin-top: 10px;
+    line-height: 20px;
+    background: #f4f4f4;
+    border: 1px solid #dedede;
+}
+
+.messages .message li > .userInformation .userContentMiddle::before, .messages .message li > .userInformation .userContentMiddle::after {
+    content: '';
+    position: absolute;
+    border: 4px solid #f4f4f4;
+    transform: rotate(45deg);
+    top: -4px;
+    left: 20px;
+}
+
+.messages .message li > .userInformation .userContentMiddle::before {
+    border: 4px solid #dedede;
+    top: -5px;
+}
+
+.messages .message li > .userInformation .userContentDown {
+    color: #999;
+    margin: 15px 0;
+}
+
+.messages .message li > .userInformation .userContentDown .upData {
+    float: left;
+}
+
+.messages .message li > .userInformation .userContentDown i {
+    font-size: 12px;
+}
+
+.messages .message li > .userInformation .userContentDown .replyLike {
+    float: right;
+}
+
+.messages .message li > .userInformation .userContentDown .replyLike .verticalLine {
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.messages .message ol > li form {
+    padding: 15px;
+    background: #f8f8f8;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    height: 100px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.messages .message ol > li form .writeReviewWrapper {
+    position: relative;
+}
+
+.messages .message ol > li form .writeReview {
+    margin-left: 62px;
+    position: relative;
+}
+
+.messages .message ol > li form textarea {
+    margin: 0;
+    padding: 5px 10px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+    resize: none;
+    outline: none;
+    height: 33px;
+    width: 100%;
+    line-height: 19px;
+    font-size: 12px;
+    color: #333;
+}
+
+.messages .message ol > li form input[name=userName] {
+    display: inline-block;
+    resize: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5px 6px 6px;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+}
+
+.messages .message ol > li form input[type=submit] {
+    margin-top: 10px;
+    width: 46px;
+    height: 25px;
+    background: url("../images/button.png") -84px -64px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    float: right;
+}
+
+.messages .message ol > li form .writeReviewWrapper .writeReview::before,
+.messages form .writeReviewWrapper .writeReview::after {
+    content: '';
+    position: absolute;
+    border: 5px solid #cdcdcd;
+    transform: rotate(45deg);
+    top: 8px;
+    left: -5px;
+}
+
+.messages .message ol > li form .writeReviewWrapper .writeReview::after {
+    border: 5px solid white;
+    left: -3px;
+}
